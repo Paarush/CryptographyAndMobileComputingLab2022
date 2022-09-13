@@ -74,7 +74,7 @@ char* decode(char* input, int c)
 		if (i<over) counts[i]++;
 	}
 	for (int i=c; i<(2*c-2); i++){
-		counts[2*c-i-2]=base;
+		counts[2*c-i-2]+=base;
 		if (i<over) counts[i]++;
 	}
 	char *p=input;
